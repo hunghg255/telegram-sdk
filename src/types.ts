@@ -79,6 +79,7 @@ export type WebAppType = {
     ready(): Function;
     expand(): Function;
     close(): Function;
+    shareToStory(): (media_url: string, params: any) => void;
 }
 
 export type WebViewType = {
