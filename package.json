@@ -1,6 +1,6 @@
 {
   "name": "telegram-sdk",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Telegram Web App - (Uses July 7, 2024, Bot API 7.7)",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
