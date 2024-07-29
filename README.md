@@ -58,4 +58,8 @@ WebView.postEvent('web_app_setup_swipe_behavior', false, {
 });
 ```
 
-Refer to the official [Telegram documentation](https://core.telegram.org/bots/webapps#initializing-web-apps) for Web Apps to explore additional features available through WebApp.
+## Documentation
+
+- Refer to the official [Telegram documentation](https://core.telegram.org/bots/webapps#initializing-web-apps) for Web Apps to explore additional features available through WebApp.
+
+- Core script is available in the [Telegram JS module](https://telegram.org/js/telegram-web-app.js)
