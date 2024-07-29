@@ -1,6 +1,6 @@
 {
   "name": "telegram-sdk",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "packageManager": "pnpm@9.5.0",
   "description": "Telegram Web App - (Uses July 7, 2024, Bot API 7.7)",
   "main": "dist/index.js",
