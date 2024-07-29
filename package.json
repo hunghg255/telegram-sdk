@@ -29,7 +29,12 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "prepublish": "npm run build",
+    "release": "bummp",
+    "lint": "tsc",
+    "verify-commit": "verify-commit-msg",
+    "prepare": "git-scm-hooks"
   },
   "repository": {
     "type": "git",
@@ -56,7 +61,14 @@
   },
   "homepage": "https://github.com/hunghg255/telegram-sdk#readme",
   "devDependencies": {
+    "bumpp": "^9.4.1",
+    "git-scm-hooks": "^0.0.11",
     "tsup": "^8.2.3",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "verify-commit-msg": "^0.0.14"
+  },
+  "git-hooks": {
+    "pre-commit": "npm run lint",
+    "commit-msg": "npm run verify-commit"
   }
 }
