@@ -52,10 +52,27 @@ WebApp.setBackgroundColor('#f60000')
 // to set the app header color
 WebApp.setHeaderColor('bg_color');
 
-// Display a simple view
+// Display a swipe vertical by event
 WebView.postEvent('web_app_setup_swipe_behavior', false, {
   allow_vertical_swipe: false,
 });
+
+// ready method must come last
+WebApp.ready();
+```
+
+## disableVerticalSwipes
+
+```ts
+import { WebApp, WebView } from 'telegram-sdk';
+
+// Config something...
+WebApp.expand(); // Expand app
+WebApp.disableClosingConfirmation();
+WebApp.disableVerticalSwipes(); // Disable Vertical Swiper
+
+// ready method must come last
+WebApp.ready();
 ```
 
 ## Documentation
